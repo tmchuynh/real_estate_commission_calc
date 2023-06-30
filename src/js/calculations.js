@@ -90,5 +90,8 @@ function calculate() {
     console.log(agentPortion)
     console.log(brokerPortion)
 
-    
+    commissionSaleDisplay.innerHTML = propertyValue.value * (commission / 100);
+    agentsPortionDisplay.innerHTML = propertyValue.value * (agentPortion / 100);
+    brokerPortionDisplay.innerHTML = agentsPortionDisplay.innerHTML * (brokerPortion / 100);
+    takeHomeDisplay.innerHTML = agentsPortionDisplay.innerHTML - brokerPortionDisplay.innerHTML;
 }
