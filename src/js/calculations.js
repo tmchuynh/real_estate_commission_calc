@@ -18,6 +18,14 @@ function getCommission(el) {
     let _ = el.textContent;
     _ = _.replace("%", "")
     commission = _;
+    const buttons = document.querySelectorAll(".btn-group.commission button");
+    buttons.forEach(button => {
+        if (button === el) {
+            button.classList.add("visited");
+        } else {
+            button.classList.remove("visited");
+        }
+    });
     console.log(commission);
 }
 
@@ -30,6 +38,14 @@ function getAgentPortion(el) {
     let _ = el.textContent;
     _ = _.replace("%", "")
     agentPortion = _;
+        const buttons = document.querySelectorAll(".btn-group.agents button");
+    buttons.forEach(button => {
+        if (button === el) {
+            button.classList.add("visited");
+        } else {
+            button.classList.remove("visited");
+        }
+    });
     console.log(agentPortion);
 }
 
@@ -43,6 +59,14 @@ function getBrokerPortion(el) {
     let _ = el.textContent;
     _ = _.replace("%", "")
     brokerPortion = _;
+        const buttons = document.querySelectorAll(".btn-group.brokers button");
+    buttons.forEach(button => {
+        if (button === el) {
+            button.classList.add("visited");
+        } else {
+            button.classList.remove("visited");
+        }
+    });
     console.log(brokerPortion);
 }
 

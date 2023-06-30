@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .body {
   justify-content: center;
@@ -11,45 +12,56 @@
   width: 70%;
   background-color: teal;
   display: flex;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .header {
   justify-content: center;
   text-align: center;
   padding: 1rem;
   border-radius: 15px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 10px;
-  color: teal; }
+  color: teal;
+}
 
 .input-group {
   display: flex;
   justify-content: center;
-  flex-direction: column; }
-  .input-group .btn-group {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0; }
-    .input-group .btn-group button:active {
-      background-color: #52b6f8;
-      border: none;
-      color: white; }
-    .input-group .btn-group * {
-      margin: .5rem;
-      border-radius: 10px !important; }
+  flex-direction: column;
+}
+.input-group .btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.input-group .btn-group button.visited,
+.input-group .btn-group button:active {
+  background-color: white;
+  border: none;
+  color: #52b6f8;
+}
+.input-group .btn-group * {
+  margin: 0.5rem;
+  border-radius: 10px !important;
+}
 
 .displays {
-  justify-content: center; }
-  .displays .display-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .displays .display-group .row {
-      margin: 1.5rem; }
+  justify-content: center;
+}
+.displays .display-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.displays .display-group .row {
+  margin: 1.5rem;
+}
 
 .error {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
