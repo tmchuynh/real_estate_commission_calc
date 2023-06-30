@@ -29,38 +29,31 @@
                             placeholder="1500000">
                     </div>
 
-                    <h6>Comission on the sale %</h6>
-                    <div class="btn-group" role="group" aria-label="comissionSale">
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">5%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">10%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">15%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">25%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">50%</button>
-                        <input type="text" class="form-control" oninput="getInputValue(this)" id="comissionSale"
-                            placeholder="5%">
+                    <h6>Commission on the sale %</h6>
+                    <div class="btn-group" role="group" aria-label="commissionSale11">
+                        <button type="button" onclick="getCommission(this)" class="btn btn-primary">4.8%</button>
+                        <button type="button" onclick="getCommission(this)" class="btn btn-primary">5%</button>
+                        <button type="button" onclick="getCommission(this)" class="btn btn-primary">5.4%</button>
+                        <button type="button" onclick="getCommission(this)" class="btn btn-primary">5.8%</button>
+                        <button type="button" onclick="getCommission(this)" class="btn btn-primary">6%</button>
                     </div>
 
                     <h6>Buying/Selling agent's portion %</h6>
-                    <div class="btn-group" role="group" aria-label="agentsPortion">
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">5%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">10%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">15%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">25%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">50%</button>
+                    <div class="btn-group" role="group" aria-label="agentsPortion11">
+                        <button type="button" onclick="getAgentPortion(this)" class="btn btn-primary">1%</button>
+                        <button type="button" onclick="getAgentPortion(this)" class="btn btn-primary">2%</button>
+                        <button type="button" onclick="getAgentPortion(this)" class="btn btn-primary">2.5%</button>
+                        <button type="button" onclick="getAgentPortion(this)" class="btn btn-primary">2.75%</button>
+                        <button type="button" onclick="getAgentPortion(this)" class="btn btn-primary">3%</button>
                     </div>
 
                     <h6>Broker's portion %</h6>
-                    <div class="btn-group" role="group" aria-label="brokerPortion">
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">5%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">10%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">15%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">25%</button>
-                        <button type="button" onclick="getTipButton(this)" class="btn btn-primary">50%</button>
-                        <div>
-                            <h6>Flat rate:</h6>
-                            <input type="text" class="form-control" oninput="getInputValue(this)" id="brokerPortion"
-                                placeholder="30%">
-                        </div>
+                    <div class="btn-group" role="group" aria-label="brokerPortion11">
+                        <button type="button" onclick="getBrokerPortion(this)" class="btn btn-primary">15%</button>
+                        <button type="button" onclick="getBrokerPortion(this)" class="btn btn-primary">20%</button>
+                        <button type="button" onclick="getBrokerPortion(this)" class="btn btn-primary">25%</button>
+                        <button type="button" onclick="getBrokerPortion(this)" class="btn btn-primary">30%</button>
+                        <button type="button" onclick="getBrokerPortion(this)" class="btn btn-primary">50%</button>
                     </div>
                 </div>
 
@@ -69,10 +62,10 @@
                 <div class="display-group">
                     <div class="row">
                         <div class="col">
-                            <h6>Comission on the sale</h6>
+                            <h6>Commission on the sale</h6>
                         </div>
                         <div class="col">
-                            <h1 class="tip_amount">$0.00</h1>
+                            <h1 class="commissionSaleDisplay">$0.00</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -80,7 +73,7 @@
                             <h6>Buying/Selling agent's portion</h6>
                         </div>
                         <div class="col">
-                            <h1 class="total_amount">$0.00</h1>
+                            <h1 class="agentsPortionDisplay">$0.00</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -88,7 +81,7 @@
                             <h6>Broker's portion</h6>
                         </div>
                         <div class="col">
-                            <h1 class="total_amount">$0.00</h1>
+                            <h1 class="brokerPortionDisplay">$0.00</h1>
                         </div>
                     </div>
                     <div class="row">
@@ -96,7 +89,7 @@
                             <h6>You take home</h6>
                         </div>
                         <div class="col">
-                            <h1 class="total_amount">$0.00</h1>
+                            <h1 class="takeHomeDisplay">$0.00</h1>
                         </div>
                     </div>
                     <div class="row">
